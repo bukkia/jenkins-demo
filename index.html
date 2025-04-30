@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Importance of Vibe Coding</title>
+  <style>
+    body {
+      background: #1e1e2f;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00ffd0;
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    button {
+      background: #00ffd0;
+      color: #1e1e2f;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-top: 2em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #00c9a7;
+    }
+
+    .vibe {
+      margin-top: 20px;
+      font-style: italic;
+      color: #ffc107;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vibe Coding: Code With Energy</h1>
+  <p>
+    Vibe coding isn't just about writing code — it's about setting the mood,
+    enjoying the rhythm, and being in the flow state. When you vibe while coding,
+    your creativity flows, your focus sharpens, and problems seem more like puzzles
+    than obstacles.
+  </p>
+
+  <button onclick="showVibe()">Show the Vibe</button>
+  <p id="vibeMessage" class="vibe">🔥 Headphones on. Lo-fi beats. Full focus. Let's build something amazing. 🔥</p>
+
+  <script>
+    function showVibe() {
+      const msg = document.getElementById('vibeMessage');
+      msg.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
